@@ -200,6 +200,16 @@ h2.washi-tape {
     }
 }
 /*----- Content Stuff -----*/
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @media screen and (min-width: 700px) {
+        flex-wrap: no-wrap;  
+        gap: 3rem;  
+    }
+}
 /*--- Nav Funnel ---*/
 .nav-funnel {
     display: flex;
