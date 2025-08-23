@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    {% include "basehead.html" %}
+    {% block head %}{% endblock %}
+</head>
+<body>
+  <div class="site-container">
+    <header class="header">
+        <h1 class="header--logo">
+            <a title="aoverkamp :: fine art &amp; design" href="/" class="{{ 'active' if '/' in page.url }}">
+                <img src="/assets/images/ao-logo-2020--flat-style-min.png" alt="aoverkamp :: fine art &amp; design">
+            </a>
+        </h1>  
+        <nav class="header--nav">   
+            <a href="/artwork" class="{{ 'active' if '/artwork' in page.url }}">
+                <span>artwork</span>
+            </a>
+
+            <a href="/design" class="{{ 'active' if '/design' in page.url }}">
+                <span>design</span>
+            </a> 
+
+            <a href="/photography" class="{{ 'active' if '/photography' in page.url }}">
+                <span>photography</span> 
+            </a>
+
+            <a href="/contact" class="{{ 'active' if '/contact' in page.url }}">
+                <span>info</span> 
+            </a>
+        </nav>
+    </header>
+    <main class="main">
+      {{ content | safe }}
+    </main>
+    <footer class="footer">
+        <span class="copyright">© 2025 aoverkamp, all rights reserved.</span>
+    </footer>
+  </div>
+</body>
+</html>
