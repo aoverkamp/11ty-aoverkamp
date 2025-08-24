@@ -140,9 +140,11 @@ h2.washi-tape {
     }
     .header--logo {
         margin: 0;
+        line-height: 1;
+
         img {
             width: 100%;
-            max-width: 3.5rem;
+            max-width: 2.5rem;
         }
         @media screen and (min-width: 1080px) {
             img {
@@ -157,7 +159,7 @@ h2.washi-tape {
         justify-content: flex-end;
 
         a {
-            padding: .75rem 1rem;
+            padding: .5rem .65rem;
             color: var(--off-white, #f9f9f9);
             color: var(--nav, #444);
             font-size: 1.125rem;
@@ -170,6 +172,9 @@ h2.washi-tape {
             &.active {
                 border-bottom: 1px solid var(--lime-green, #a0d029);
                 color: var(--nav-active, #888);
+            } 
+            @media screen and (min-width: 700px) {
+                padding: .75rem 1rem;
             }
         }
 
