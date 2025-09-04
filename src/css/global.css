@@ -136,7 +136,7 @@ h2.washi-tape {
         align-items: center;
         justify-content: flex-start;
         max-width: 240px;
-        padding: 2.25rem;
+        padding: 2.25rem 4rem;
     }
     .header--logo {
         margin: 0;
